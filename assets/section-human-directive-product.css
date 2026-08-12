@@ -8,15 +8,18 @@
 }
 
 .product-info--human-directive .product {
-  --hd-product-gap: clamp(2.4rem, 5vw, 7.2rem);
   align-items: start;
-  gap: var(--hd-product-gap);
+  gap: 0;
 }
 
 @media screen and (min-width: 550px) {
   .product-info--human-directive .product.grid--1-col-tablet-down > .grid__item {
-    width: calc((100% - var(--hd-product-gap)) / 2);
-    max-width: calc((100% - var(--hd-product-gap)) / 2);
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .product-info--human-directive .product__media-wrapper {
+    padding-right: clamp(2.4rem, 5vw, 7.2rem);
   }
 }
 
@@ -253,6 +256,10 @@
   .product-info--human-directive .product__info-wrapper {
     margin-top: 1.6rem;
     padding: 2rem;
+  }
+
+  .product-info--human-directive .product__media-wrapper {
+    padding-right: 0;
   }
 
   .human-directive-story__benefits,
