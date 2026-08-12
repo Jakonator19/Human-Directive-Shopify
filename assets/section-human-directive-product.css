@@ -5,17 +5,25 @@
   --hd-line: #d7dfd8;
   --hd-accent: #e9ad5a;
   color: var(--hd-ink);
+  background: linear-gradient(180deg, #fff 0%, #fff 88%, var(--hd-sand) 88%, var(--hd-sand) 100%);
 }
 
 .product-info--human-directive .product {
   align-items: start;
   gap: 0;
+  max-width: 128rem;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 550px) {
   .product-info--human-directive .product.grid--1-col-tablet-down > .grid__item {
-    width: 50%;
-    max-width: 50%;
+    width: 52%;
+    max-width: 52%;
+  }
+
+  .product-info--human-directive .product.grid--1-col-tablet-down > .product__info-wrapper {
+    width: 48%;
+    max-width: 48%;
   }
 
   .product-info--human-directive .product__media-wrapper {
@@ -25,7 +33,7 @@
 
 .product-info--human-directive .product__media-wrapper {
   background: var(--hd-sand);
-  border-radius: 2.4rem;
+  border-radius: 2rem;
   overflow: hidden;
 }
 
@@ -33,16 +41,36 @@
   background: var(--hd-sand);
 }
 
+.product-info--human-directive .global-media-settings,
+.product-info--human-directive .global-media-settings:after,
+.product-info--human-directive .product__media-item .product__modal-opener,
+.product-info--human-directive .thumbnail {
+  border: 0;
+  box-shadow: none;
+}
+
+.product-info--human-directive .thumbnail {
+  overflow: hidden;
+  border-radius: 1rem;
+  background: var(--hd-sand);
+}
+
+.product-info--human-directive .thumbnail[aria-current] {
+  outline: .2rem solid var(--hd-ink);
+  outline-offset: .2rem;
+}
+
 .product-info--human-directive .product__info-wrapper {
   border: 1px solid var(--hd-line);
-  border-radius: 2rem;
-  padding: clamp(2rem, 3vw, 3.6rem);
+  border-radius: 1.8rem;
+  padding: clamp(2.4rem, 3vw, 3.8rem);
   background: #fff;
+  box-shadow: 0 1.6rem 4rem rgba(16, 47, 49, .06);
 }
 
 .product-info--human-directive .product__title {
-  font-size: clamp(3.2rem, 4.2vw, 5.2rem);
-  line-height: .98;
+  font-size: clamp(3.2rem, 3.6vw, 4.8rem);
+  line-height: 1;
   letter-spacing: -.05em;
   color: var(--hd-ink);
 }
@@ -67,6 +95,16 @@
   border-radius: 99rem;
   background: var(--hd-ink);
   box-shadow: none;
+}
+
+.product-info--human-directive .price {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.product-info--human-directive .product-form,
+.product-info--human-directive .shopify-payment-button {
+  margin-top: 1.8rem;
 }
 
 .product-info--human-directive .product-form__submit:hover {
