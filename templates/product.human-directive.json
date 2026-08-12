@@ -8,13 +8,12 @@
         "description": { "type": "text", "settings": { "text": "Daily chewables formulated with probiotics, xylitol, hydroxyapatite, and guava fruit to support everyday oral wellness.", "text_style": "body" } },
         "price": { "type": "price", "settings": {} },
         "reviews": { "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8", "settings": {} },
-        "quantity": { "type": "quantity_selector", "settings": {} },
-        "bundles": { "type": "shopify://apps/pumper-bundles/blocks/app-block-qb/0856870d-2aca-4b1e-a662-cf1797f61270", "settings": { "selected_product": "{{product}}", "using_page_builder": false } },
-        "buy_buttons": { "type": "buy_buttons", "settings": { "show_dynamic_checkout": true, "show_gift_card_recipient": true } },
         "subscriptions": { "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad", "settings": { "widget_style": "card", "widget_style_card_selector": "radio_button", "subscription_policy_url": "", "color_text_body": "#102f31", "dividers_color": "#d7dfd8", "background_color": "#ffffff", "border_thickness": 1, "border_radius": 12, "product": "{{product}}" } },
+        "variant_picker": { "type": "variant_picker", "settings": { "picker_type": "button", "swatch_shape": "circle" } },
+        "buy_buttons": { "type": "buy_buttons", "settings": { "show_dynamic_checkout": false, "show_gift_card_recipient": true } },
         "trust": { "type": "icon-with-text", "settings": { "layout": "horizontal", "icon_1": "check_mark", "heading_1": "Made in USA", "icon_2": "check_mark", "heading_2": "30 daily chewables", "icon_3": "check_mark", "heading_3": "Easy once-daily routine" } }
       },
-      "block_order": ["title", "positioning", "description", "price", "reviews", "quantity", "bundles", "buy_buttons", "subscriptions", "trust"],
+      "block_order": ["title", "positioning", "description", "price", "reviews", "subscriptions", "variant_picker", "buy_buttons", "trust"],
       "settings": { "enable_sticky_info": true, "color_scheme": "scheme-1", "media_size": "medium", "constrain_to_viewport": true, "media_fit": "contain", "gallery_layout": "thumbnail", "mobile_thumbnails": "show", "media_position": "left", "image_zoom": "lightbox", "hide_variants": false, "enable_video_looping": false, "padding_top": 28, "padding_bottom": 36 }
     },
     "story": {

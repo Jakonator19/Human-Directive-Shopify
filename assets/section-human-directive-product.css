@@ -102,6 +102,29 @@
   font-weight: 700;
 }
 
+.product-info--human-directive .product-form__input--pill input[type='radio'] + label {
+  min-width: 9.6rem;
+  padding: 1.2rem 1.6rem;
+  border: 1px solid var(--hd-line);
+  border-radius: 1rem;
+  background: #fff;
+  color: var(--hd-ink);
+  font-weight: 700;
+  text-align: center;
+}
+
+.product-info--human-directive .product-form__input--pill input[type='radio']:checked + label {
+  border-color: var(--hd-ink);
+  background: var(--hd-ink);
+  color: #fff;
+  box-shadow: none;
+}
+
+.product-info--human-directive .product-form__input--pill input[type='radio']:focus-visible + label {
+  outline: .2rem solid var(--hd-accent);
+  outline-offset: .2rem;
+}
+
 .product-info--human-directive .product-form,
 .product-info--human-directive .shopify-payment-button {
   margin-top: 1.8rem;
