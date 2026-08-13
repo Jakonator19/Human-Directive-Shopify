@@ -112,52 +112,14 @@
 }
 
 .product-info--human-directive .icon-with-text {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0;
-  width: 100%;
-  margin-top: 2.4rem;
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid var(--hd-line);
-  border-radius: 1.6rem;
-  background: #fff;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--hd-line);
 }
 
 .product-info--human-directive .icon-with-text__item {
-  position: relative;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1.1rem;
-  min-height: 8.4rem;
-  width: auto;
-  padding: 1.8rem 2rem;
   color: var(--hd-ink);
   font-weight: 600;
-  text-align: left;
-}
-
-.product-info--human-directive .icon-with-text__item + .icon-with-text__item::before {
-  position: absolute;
-  top: 1.8rem;
-  bottom: 1.8rem;
-  left: 0;
-  width: 1px;
-  content: '';
-  background: var(--hd-line);
-}
-
-.product-info--human-directive .icon-with-text .svg-wrapper {
-  flex: 0 0 auto;
-  width: 2.4rem;
-  height: 2.4rem;
-  margin: 0;
-}
-
-.product-info--human-directive .icon-with-text .h4 {
-  padding: 0;
-  font-size: 1.6rem;
-  line-height: 1.25;
 }
 
 .human-directive-story {
@@ -336,25 +298,6 @@
 
   .product-info--human-directive .product__media-wrapper {
     padding-right: 0;
-  }
-
-  .product-info--human-directive .icon-with-text {
-    grid-template-columns: 1fr;
-  }
-
-  .product-info--human-directive .icon-with-text__item {
-    justify-content: flex-start;
-    min-height: 6.4rem;
-    padding: 1.5rem 2rem;
-  }
-
-  .product-info--human-directive .icon-with-text__item + .icon-with-text__item::before {
-    top: 0;
-    right: 2rem;
-    bottom: auto;
-    left: 2rem;
-    width: auto;
-    height: 1px;
   }
 
   .human-directive-story__benefits,
