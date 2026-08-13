@@ -688,7 +688,9 @@
                     {%- endif -%}
                   </product-recommendations>
                 {%- when 'icon-with-text' -%}
-                  {% render 'icon-with-text', block: block %}
+                  {% unless template.suffix == 'human-directive' %}
+                    {% render 'icon-with-text', block: block %}
+                  {% endunless %}
               {%- endcase -%}
             {%- endfor -%}
             <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -697,6 +699,14 @@
             </a>
           </section>
         </div>
+        {% if template.suffix == 'human-directive' %}
+          {% assign product_trust_blocks = section.blocks | where: 'type', 'icon-with-text' %}
+          {% for block in product_trust_blocks %}
+            <div class="product__trust-bar" {{ block.shopify_attributes }}>
+              {% render 'icon-with-text', block: block %}
+            </div>
+          {% endfor %}
+        {% endif %}
       </div>
 
       {% render 'product-media-modal', variant_images: variant_images %}

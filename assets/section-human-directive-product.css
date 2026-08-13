@@ -122,6 +122,43 @@
   font-weight: 600;
 }
 
+.product-info--human-directive .product__trust-bar {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: 2.8rem;
+  padding: 2rem 2.4rem;
+  border: 1px solid var(--hd-line);
+  border-radius: 1.6rem;
+  background: #f8fafc;
+}
+
+.product-info--human-directive .product__trust-bar .icon-with-text {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.product-info--human-directive .product__trust-bar .icon-with-text__item {
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.1rem;
+  width: 33.333%;
+  text-align: left;
+}
+
+.product-info--human-directive .product__trust-bar .icon-with-text .svg-wrapper {
+  flex: 0 0 auto;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0;
+}
+
+.product-info--human-directive .product__trust-bar .icon-with-text .h4 {
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+
 .human-directive-story {
   --hd-ink: #102f31;
   --hd-muted: #526466;
@@ -298,6 +335,22 @@
 
   .product-info--human-directive .product__media-wrapper {
     padding-right: 0;
+  }
+
+  .product-info--human-directive .product__trust-bar {
+    margin-top: 1.6rem;
+    padding: .8rem 2rem;
+  }
+
+  .product-info--human-directive .product__trust-bar .icon-with-text {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .product-info--human-directive .product__trust-bar .icon-with-text__item {
+    justify-content: flex-start;
+    width: auto;
+    min-height: 5.6rem;
   }
 
   .human-directive-story__benefits,
